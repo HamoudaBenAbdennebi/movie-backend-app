@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="/"><h3>watch.mp4</h3></a>
+        <div>
+            <a href="/movies">movies</a>
+            <a href="/contact">contact</a>
+            <a id="login" href="/login">login</a>
+        </div>
+    </nav>
+    <div >
+        <header style="width: 100%;height: 90vh;">
+            <section>
+                <div class="hero">
+                     <img src="./res/movie-maker-alternative.jpg" alt="img">
+                     <h3 id="headline">watch.mp4</h3>
+                </div>
+            </section>
+        </header>
+    
+        <div class="slider"></div>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
+    <script>
+        const hero = document.querySelector('.hero');
+        const slider = document.querySelector('.slider');
+        const headline = document.querySelector('#headline');
+        const tl = new TimelineMax();
+        tl.fromTo(hero,1,{height:"0%"},{height:"80%" ,ease:Power2.easeInOut})
+        .fromTo(hero,1.2,{width:"100%"},{width:"80%",ease:Power2.easeInOut})
+        .fromTo(slider,1.2,{x:"-100%"},{x:"0%",ease:Power2.easeInOut},"-=1.2")
+        .fromTo(headline,0.5,{opacity:0,x:-30},{opacity:1,x:0})
+    </script>
+</body>
+</html>

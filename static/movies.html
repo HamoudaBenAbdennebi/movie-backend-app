@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="/"><h3>watch.mp4</h3></a>
+        <div>
+            <a href="/movies">movies</a>
+            <a href="/contact">contact</a>
+            <a id="login" href="/login">login</a>
+        </div>
+    </nav>
+    <main class="movie-list">
+        <div class="card" id="Jamesy">
+            <img src="https://fr.web.img3.acsta.net/pictures/16/06/29/17/27/218232.jpg" alt="Jamesy Boy">
+            <div class="cart-desc">
+                <h1>Jamesy Boy</h1>
+            </div>
+        </div>
+        <div class="card" id="Crated">
+            <img src="https://m.media-amazon.com/images/M/MV5BZmQ2N2U4ZmEtMWI4OS00ZTVhLTljYTQtYzRiYzZhNDkzMmQxXkEyXkFqcGdeQXVyMTE2MTY3Mjcz._V1_UY1200_CR52,0,630,1200_AL_.jpg" alt="Crated">
+            <div class="cart-desc">
+                <h1>Crated</h1>
+            </div>
+        </div>
+        <div class="card" id="future">
+            <img src="https://www.hotfootdesign.co.uk/wp-content/uploads/2015/10/Back_to_the_future.jpg" alt="Back to the future">
+            <div class="cart-desc">
+                <h1>Back to the future</h1>
+            </div>
+        </div>
+        <div class="card" id="AVATAR">
+            <img src="https://i.pinimg.com/736x/46/74/f6/4674f6db90b640adf55c098b65117efa.jpg" alt="avatar">
+            <div class="cart-desc">
+                <h1>AVATAR</h1>
+            </div>
+        </div>
+    </main>
+    <script>
+        var Jamesy = document.getElementById('Jamesy')
+        var Crated = document.getElementById('Crated')
+        var future = document.getElementById('future')
+        var AVATAR = document.getElementById('AVATAR')
+        Jamesy.addEventListener('click',()=>{
+            open('https://www.youtube.com/embed/f2yehJZHS8s')
+        })
+        Crated.addEventListener('click',()=>{
+            open('https://www.youtube.com/embed/BD_pjm7xvgg')
+        })
+        future.addEventListener('click',()=>{
+            open('https://www.youtube.com/embed/yG7Z_Yqiwbg')
+        })
+        AVATAR.addEventListener('click',()=>{
+            open('https://www.youtube.com/embed/9MEnSM55TwY')
+        })
+        
+    </script>
+</body>
+</html>
